@@ -1,0 +1,112 @@
+
+.billing-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #f9f9f9;
+}
+
+.billing-summary {
+  margin-top: 20px;
+}
+
+.billing-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+.billing-item-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.billing-item-info {
+  flex: 1;
+}
+
+.billing-item-name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.billing-item-price,
+.billing-item-quantity,
+.billing-item-total {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.payment-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.billing-empty {
+  text-align: center;
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .billing-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .billing-item-image {
+    width: 100%;
+    max-width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .billing-item-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .billing-item {
+    padding: 15px;
+  }
+
+  .billing-item-name {
+    font-size: 1rem;
+  }
+
+  .billing-item-price,
+  .billing-item-quantity,
+  .billing-item-total {
+    font-size: 0.875rem;
+  }
+
+  .payment-button {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+  }
+}

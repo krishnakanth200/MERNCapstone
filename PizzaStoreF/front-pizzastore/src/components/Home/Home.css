@@ -1,0 +1,107 @@
+/* Home container styling */
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Carousel styling */
+.carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto; 
+  position: relative;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 1s ease-in-out; 
+}
+
+.carousel-image {
+  min-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+
+.typing-animation {
+  font-size: 2em;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
+
+
+.about-section {
+  margin: 20px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  width: 300px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .carousel-image {
+    max-height: 300px; 
+  }
+
+  .typing-animation {
+    font-size: 1.5em; 
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .typing-animation {
+    font-size: 1.2em; 
+  }
+
+  .carousel-image {
+    max-height: 200px; 
+  }
+}

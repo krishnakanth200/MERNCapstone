@@ -1,0 +1,115 @@
+/* Container for the user management page */
+.user-management-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Header style */
+.user-management-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container for the table */
+.table-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px; /* Reduced padding around the table */
+    max-width: 1200px; /* Set max-width for container to reduce size */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0; /* Remove margin to fit within container */
+}
+
+/* Table header and cells styling */
+thead {
+    background-color: #f8f9fa;
+}
+
+th, td {
+    padding: 8px; /* Reduced padding in table cells */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1em;
+}
+
+td {
+    font-size: 0.9em;
+}
+
+/* Action buttons */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px; /* Reduced padding in buttons */
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+
+/* Tablets and small screens */
+@media (max-width: 768px) {
+    .user-management-page {
+        padding: 10px;
+    }
+
+    .table-container {
+        padding: 5px; /* Further reduced padding around the table */
+        max-width: 100%; /* Full width for small screens */
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+
+    button {
+        padding: 4px 8px; /* Further reduced padding in buttons */
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    table {
+        font-size: 0.7em;
+    }
+
+    button {
+        padding: 4px 6px; /* Further reduced padding in buttons */
+        font-size: 0.8em;
+    }
+}

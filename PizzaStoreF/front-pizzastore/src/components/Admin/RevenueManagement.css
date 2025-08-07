@@ -1,0 +1,57 @@
+/* RevenueManagement.css */
+
+.revenue-management-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+}
+
+.success {
+    color: green;
+    font-size: 1rem;
+}
+
+.pie-chart-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) { /* Tablet */
+    .revenue-management-container {
+        padding: 15px;
+    }
+    
+    .error, .success {
+        font-size: 0.9rem;
+    }
+
+    .pie-chart-container {
+        max-width: 100%;
+        width: 100%;
+        padding: 10px; /* Add padding for better spacing on smaller screens */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile */
+    .revenue-management-container {
+        padding: 10px;
+    }
+    
+    .error, .success {
+        font-size: 0.8rem;
+    }
+
+    .pie-chart-container {
+        max-width: 100%;
+        width: 100%;
+        padding: 5px; /* Reduce padding on very small screens */
+    }
+}

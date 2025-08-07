@@ -1,0 +1,24 @@
+
+
+.popup {
+    position: fixed;
+    bottom: 10%; /* Positioned 10% above the bottom of the viewport */
+    right: -300px; /* Start off-screen on the right */
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 15px; /* Reduced padding for decreased height */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: right 0.5s ease-out; /* Slide-in animation */
+    height: auto; /* Adjust height dynamically */
+    max-height: 60px; /* Set to 60% of the original height */
+    overflow: hidden; /* Hide overflow if content exceeds max height */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.popup.show {
+    right: 20px; /* Final on-screen position */
+}
